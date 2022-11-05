@@ -6,7 +6,6 @@ import Card from './Card'
 import data from "./data.js"
 
 function App() {
-  const [count, setCount] = useState(0)
   const cards=data.map(item=> <Card key={item.id} item={item} />)
 
   return (<>
